@@ -1,0 +1,60 @@
+.wrapper {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.accordian {
+    width: 100%;
+}
+
+.item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 0;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.title:hover {
+    background: #f0f0f0;
+}
+
+.title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.title span {
+    font-size: 1.5rem;
+    color: #888;
+    user-select: none;
+}
+
+.content {
+    padding: 12px 0 0 0;
+    color: #555;
+    font-size: 1rem;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-8px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.empty {
+    text-align: center;
+    padding: 32px 0;
+    color: #999;
+}
