@@ -2,12 +2,12 @@ import Accordian from "./components/accordian/index";
 import Bg from "./components/bgChanger/Bg";
 import RandomColor from "./components/randomColor";
 import StarRating from "./components/star-rating";
+import PassGen from "./components/passwordGen/PassGen";
 
 function App() {
   return (
     <>
-      {/* <RandomColor /> */}
-      <Bg />
+    <PassGen/>
     </>
   );
 }
