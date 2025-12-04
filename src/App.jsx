@@ -3,11 +3,17 @@ import Bg from "./components/bgChanger/Bg";
 import RandomColor from "./components/randomColor";
 import StarRating from "./components/star-rating";
 import PassGen from "./components/passwordGen/PassGen";
-
+import CurrencyConverter from "./components/currencyConverter/CurrencyConverter.jsx";
+import InputBox from "./components/currencyConverter/InputBox.jsx";
 function App() {
   return (
     <>
-    <PassGen/>
+   
+    <CurrencyConverter/>
+    
+     {/* <InputBox/> */}
+
+
     </>
   );
 }
