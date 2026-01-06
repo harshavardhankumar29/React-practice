@@ -5,16 +5,16 @@ import StarRating from "./components/star-rating";
 import PassGen from "./components/passwordGen/PassGen";
 import CurrencyConverter from "./components/currencyConverter/CurrencyConverter.jsx";
 import InputBox from "./components/currencyConverter/InputBox.jsx";
+import Form from "./components/form/Form.jsx";
+import UserContextProvider from "./components/miniContext/UserContextProvider.jsx";
+import Login from "./components/miniContext/Code/Login.jsx";
+import Profile from "./components/miniContext/Code/Profile.jsx";
 function App() {
   return (
-    <>
-   
-    <CurrencyConverter/>
-    
-     {/* <InputBox/> */}
-
-
-    </>
+    <UserContextProvider>
+      <Login/>
+      <Profile/>
+    </UserContextProvider>
   );
 }
 
@@ -46,3 +46,17 @@ export default App;
 //     </CounterProvider>
 //   );
 // }
+
+
+// <div className="App">
+    //   <Accordian />
+    //   <Bg />
+    //   <RandomColor />
+    //   <StarRating />
+    //   <PassGen />
+    // </div>
+   
+    {/* <CurrencyConverter/> */}
+    {/* <Form/> */}
+    
+     {/* <InputBox/> */}
